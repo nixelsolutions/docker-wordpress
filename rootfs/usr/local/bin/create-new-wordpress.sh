@@ -1,8 +1,5 @@
 #!/bin/bash -e
 
-# WORKAROUND
-rm -f /etc/apt/sources.list.d/ondrej-ubuntu-nginx-mainline-focal.list
-
 if ! command -V pwgen >/dev/null 2>&1; then
   apt-get -q update
   apt-get -yq install pwgen
